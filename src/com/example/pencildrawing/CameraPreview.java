@@ -61,6 +61,7 @@ public class CameraPreview extends SurfaceView implements
 		// Log.e(TAG, "==surfaceCreated==");
 		// 获得Camera对象
 		camera = Camera.open();
+		camera.setDisplayOrientation(90);
 		try {
 			// 设置用于显示拍照摄像的SurfaceHolder对象
 			camera.setPreviewDisplay(holder);
